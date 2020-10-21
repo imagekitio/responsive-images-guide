@@ -1,8 +1,53 @@
-<html>
-    <head>
+<!doctype html>
 
-    </head>
-    <body>
-        Hello
-    </body>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Using srcset and sizes - Responsive images</title>
+    <meta name="description" content="Learn usage of srcset and sizes in responsive images">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/srcset.css">
+</head>
+
+<body>
+    <h2>Srcset + sizes</h2>
+    <p>Use Chrome device emulator to check the actual image (currentSrc) loaded by the browser with different viewport width and DPR value.</p>
+    <div class="row">
+        <div class="col">
+            <img src="https://ik.imagekit.io/ikmedia/women-dress-1.jpg" 
+                srcset="https://ik.imagekit.io/ikmedia/women-dress-1.jpg?tr=w-225 225w,
+                        https://ik.imagekit.io/ikmedia/women-dress-1.jpg?tr=w-300 300w,
+                        https://ik.imagekit.io/ikmedia/women-dress-1.jpg?tr=w-350 350w,
+                        https://ik.imagekit.io/ikmedia/women-dress-1.jpg?tr=w-640 640w"
+                sizes="(max-width: 400px) 100vw, (max-width: 700px) 50vw, (max-width: 900) 33vw, 225px" />
+        </div>
+        <div class="col">
+            <img src="https://ik.imagekit.io/ikmedia/women-dress-2.jpg" 
+                srcset="https://ik.imagekit.io/ikmedia/women-dress-2.jpg?tr=w-225 225w,
+                        https://ik.imagekit.io/ikmedia/women-dress-2.jpg?tr=w-300 300w,
+                        https://ik.imagekit.io/ikmedia/women-dress-2.jpg?tr=w-350 350w,
+                        https://ik.imagekit.io/ikmedia/women-dress-2.jpg?tr=w-640 640w"
+                        sizes="(max-width: 400px) 100vw, (max-width: 700px) 50vw, (max-width: 900) 33vw, 225px" />
+        </div>
+        <div class="col">
+            <img src="https://ik.imagekit.io/ikmedia/women-dress-3.jpg" 
+                srcset="https://ik.imagekit.io/ikmedia/women-dress-3.jpg?tr=w-225 225w,
+                        https://ik.imagekit.io/ikmedia/women-dress-3.jpg?tr=w-300 300w,
+                        https://ik.imagekit.io/ikmedia/women-dress-3.jpg?tr=w-350 350w,
+                        https://ik.imagekit.io/ikmedia/women-dress-3.jpg?tr=w-640 640w"
+                        sizes="(max-width: 400px) 100vw, (max-width: 700px) 50vw, (max-width: 900) 33vw, 225px" />
+        </div>
+        <div class="col">
+            <img src="https://ik.imagekit.io/ikmedia/women-dress-4.jpg" 
+                srcset="https://ik.imagekit.io/ikmedia/women-dress-4.jpg?tr=w-225 225w,
+                        https://ik.imagekit.io/ikmedia/women-dress-4.jpg?tr=w-300 300w,
+                        https://ik.imagekit.io/ikmedia/women-dress-4.jpg?tr=w-350 350w,
+                        https://ik.imagekit.io/ikmedia/women-dress-4.jpg?tr=w-640 640w"
+                        sizes="(max-width: 400px) 100vw, (max-width: 700px) 50vw, (max-width: 900) 33vw, 225px" />
+        </div>
+    </div>
+</body>
+
 </html>

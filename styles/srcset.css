@@ -1,0 +1,27 @@
+.row {
+    font-size: 0;
+}
+
+.col {
+    width: 25%;
+    display: inline-block;
+    text-align: center;
+}
+
+@media (max-width: 900px) {
+    .col {
+        width: 33vw;
+    }
+}
+
+@media (max-width: 700px) {
+    .col {
+        width: 50vw;
+    }
+}
+
+@media (max-width: 400px) {
+    .col {
+        width: 100vw;
+    }
+}
