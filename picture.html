@@ -1,0 +1,33 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Using picture element - Responsive images</title>
+    <meta name="description" content="Learn usage of picture element in responsive images">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/picture.css">
+</head>
+
+<body>
+    <h2>Picture element</h2>
+    <p>First example - Resize the browser to see different versions of the picture loading at different viewport sizes</p>
+    <picture>
+        <source srcset="https://ik.imagekit.io/ikmedia/dashboard.png"
+            media="(min-width: 800px)">
+        <source srcset="https://ik.imagekit.io/ikmedia/dashboard-mobile.png"
+            media="(min-width: 400px)">
+        <img src="https://ik.imagekit.io/ikmedia/dashboard.png" />
+    </picture>
+
+    <p>Second example - The browser will load a WebP image if format is supported instead of a JPG image.</p>
+    <picture>
+        <source srcset="https://ik.imagekit.io/ikmedia/paddy.jpg?tr=ot-WEBP,ots-100,ox-10,oy-10,otc-00AAFF,f-webp"
+            type="image/webp">
+        <img src="https://ik.imagekit.io/ikmedia/paddy.jpg?tr=ot-JPG,ots-100,ox-10,oy-10,otc-00AAFF,f-jpg" />
+    </picture>
+</body>
+
+</html>
