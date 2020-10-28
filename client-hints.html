@@ -1,0 +1,20 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Using Client Hints - Responsive images</title>
+    <meta name="description" content="Learn usage of Client Hints in responsive images">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/index.css">
+    <meta http-equiv="Accept-CH" content="DPR, Width">
+</head>
+
+<body>
+    <h2>Client Hints</h2>
+    <p>Use Chrome inspect element to check the actual image size loaded by the browser on different devices.</p>
+    <img src="https://ik.imagekit.io/ikmedia/paddy.jpg?tr=w-auto,dpr-auto"
+        sizes="300px" />
+</body>
+</html>
