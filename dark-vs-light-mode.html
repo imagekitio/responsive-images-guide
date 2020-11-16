@@ -1,0 +1,23 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Different image in dark vs light mode using picture element</title>
+    <meta name="description" content="Learn usage of picture element in responsive images">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/picture.css">
+</head>
+
+<body>
+    <h2>Loading different image in dark vs light mode</h2>
+    <p>Toggle dark mode setting and refresh the page to see how browser loads a different image.</p>
+    <picture>
+        <source srcset="https://ik.imagekit.io/ikmedia/guides/dark-mode_dS5hrHGcX.png" media="(prefers-color-scheme: dark)">
+        <img src="https://ik.imagekit.io/ikmedia/guides/ligh-mode_5h591-if5v.png">
+      </picture>
+</body>
+
+</html>
